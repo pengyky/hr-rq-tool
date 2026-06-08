@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="HR RQ Tool Share Image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#faf4ea"/>
+      <stop offset="100%" stop-color="#f3ece0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c8e6c9"/>
+      <stop offset="35%" stop-color="#ffe0b2"/>
+      <stop offset="100%" stop-color="#ffcdd2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="56" y="56" width="1088" height="518" rx="28" fill="#fffdf8" stroke="#ece2d3"/>
+
+  <rect x="96" y="104" width="10" height="44" rx="5" fill="#c8694a"/>
+  <text x="124" y="142" font-size="50" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">
+    跑步心率区间 + 呼吸商RQ 图形化模型
+  </text>
+  <text x="96" y="206" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" fill="#857a6c">
+    基于储备心率法估算训练区间，并结合 RQ 与供能系统变化进行图形化展示
+  </text>
+
+  <rect x="96" y="266" width="1008" height="76" rx="18" fill="#fbf5ec" stroke="#ece2d3"/>
+  <rect x="96" y="266" width="150" height="76" rx="18" fill="#e8f5e9"/>
+  <rect x="246" y="266" width="184" height="76" fill="#c8e6c9"/>
+  <rect x="430" y="266" width="164" height="76" fill="#fff9c4"/>
+  <rect x="594" y="266" width="136" height="76" fill="#ffe0b2"/>
+  <rect x="730" y="266" width="112" height="76" fill="#ffccbc"/>
+  <rect x="842" y="266" width="262" height="76" rx="18" fill="#ffcdd2"/>
+
+  <text x="171" y="314" text-anchor="middle" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">D</text>
+  <text x="338" y="314" text-anchor="middle" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">E</text>
+  <text x="512" y="314" text-anchor="middle" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">M</text>
+  <text x="662" y="314" text-anchor="middle" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">T</text>
+  <text x="786" y="314" text-anchor="middle" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">A</text>
+  <text x="973" y="314" text-anchor="middle" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">I</text>
+
+  <text x="96" y="408" font-size="28" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-weight="700" fill="#3e3730">
+    训练强度与供能系统变化
+  </text>
+  <rect x="96" y="438" width="1008" height="24" rx="12" fill="url(#accent)"/>
+  <text x="96" y="506" font-size="22" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" fill="#2e7d32">低强度：有氧氧化占优</text>
+  <text x="456" y="506" font-size="22" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" fill="#a85b00">中强度：糖脂混合过渡</text>
+  <text x="804" y="506" font-size="22" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" fill="#b71c1c">高强度：无氧贡献提升</text>
+
+  <text x="96" y="552" font-size="20" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" fill="#a99d8c">
+    Designed by Charles Peng  ·  pengpcy@qq.com
+  </text>
+</svg>
