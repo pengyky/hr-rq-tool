@@ -8,7 +8,7 @@ https://sylas.cc.cd
 
 ## OG Image 展示
 
-![OG Image](https://raw.githubusercontent.com/pengyky/hr-rq-tool/refs/heads/main/og-image.svg)
+![OG Image](https://raw.githubusercontent.com/pengyky/hr-rq-tool/refs/heads/main/og-image.png)
 
 ## 功能简介
 
