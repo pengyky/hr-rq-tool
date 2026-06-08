@@ -1,19 +1,31 @@
 # Cloudflare Pages 响应头配置
 # 文档: https://developers.cloudflare.com/pages/configuration/headers/
+# 注意：CSP 中的 'sha256-...' 对应 index.html 内联 JSON-LD 的内容哈希。
+# 若修改了该 JSON-LD 块，需重新计算 sha256 并同步更新此处，否则结构化数据会被 CSP 拦截。
 
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-PY7yYbdiYi5utL4K5hey/jACHQCbJyaYY/Rd8dzDbys='; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
 
-# HTML 入口：每次校验，保证更新即时生效
-/*.html
+# HTML / CSS / JS：每次校验，部署后即时生效
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+/app.js
   Cache-Control: public, max-age=0, must-revalidate
 
-# 静态资源：长期强缓存（内容变化时改文件名即可）
+# 图标与分享图：长期强缓存（内容变化时改文件名即可）
+/favicon.ico
+  Cache-Control: public, max-age=31536000, immutable
 /favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+/apple-touch-icon.png
   Cache-Control: public, max-age=31536000, immutable
 /og-image.png
   Cache-Control: public, max-age=31536000, immutable

@@ -1,0 +1,7 @@
+# 统一文本文件为 LF 换行，避免跨平台差异
+# 也保证 index.html 的 JSON-LD 字节稳定，使 CSP 的 sha256 哈希在部署后仍然匹配
+* text=auto eol=lf
+
+# 二进制资源不做换行处理
+*.png binary
+*.ico binary
